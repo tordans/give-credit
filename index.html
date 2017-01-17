@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Give Credit, inspired by the Reply All-Podcast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script>
+    data = [
+      {
+        "episode": 3,
+        "title": "We Know What You Did",
+        "line": "Matt Lieber makes the ship run.",
+        "url": "https://gimletmedia.com/episode/3-we-know-what-you-did-rebroadcast/"
+      },
+      {
+        "episode": 4,
+        "title": "Follow The Money",
+        "line": "Matt Lieber makes the ship run.",
+        "url": "https://gimletmedia.com/episode/4-follow-the-money/"
+      },
+      {
+        "episode": 5,
+        "title": "Jennicam Revisited",
+        "line": "Matt Lieber is a nap in a hammock.",
+        "url": "https://gimletmedia.com/episode/5-the-jennicam/"
+      },
+      {
+        "episode": 6,
+        "title": "This Proves Everything + The Best Hold Music In The World",
+        "line": "Matt Lieber is the solution to a problem that’s been bothering you for awhile.",
+        "url": "https://gimletmedia.com/episode/6-this-proves-everything/"
+      },
+      {
+        "episode": 7,
+        "title": "This Website Is For Sale",
+        "line": "Matt Lieber is the world’s tallest man.",
+        "url": "https://gimletmedia.com/episode/7-this-website-is-for-sale/"
+      },
+      {
+        "episode": 9,
+        "title": "The Writing On The Wall",
+        "line": "Matt Lieber is a force to be reckoned with.",
+        "url": "https://gimletmedia.com/episode/9-yik-yak/"
+      },
+      {
+        "episode": 10,
+        "title": "The French Connection",
+        "line": "Matt Lieber is the lone voice of reason in an otherwise insane world.",
+        "url": "https://gimletmedia.com/episode/french-connection/",
+      },
+      {
+        "episode": 11,
+        "title": "Did Errol Morris Brother Invent Email",
+        "line": "Matt Lieber is a blizzard that actually shows up.",
+        "url": "https://gimletmedia.com/episode/11-did-errol-morris-brother-invent-email/",
+      },
+      {
+        "episode": 12,
+        "title": "Backend Trouble",
+        "line": "Matt Lieber is like a memory of summer in a winter that seems to go on forever.",
+        "url": "https://gimletmedia.com/episode/12-backend-trouble/",
+      },
+      {
+        "episode": 13,
+        "title": "Love Is Lies",
+        "line": "Matt Lieber is the smell of clean laundry.",
+        "url": "https://gimletmedia.com/episode/13-love-is-lies/",
+      },
+      {
+        "episode": 14,
+        "title": "The Art Of Making And Fixing Mistakes",
+        "line": "Matt Lieber is an HBO GO login that your friend’s being cool and just letting you use for awhile.",
+        "url": "https://gimletmedia.com/episode/14-the-art-of-making-and-fixing-mistakes/",
+      },
+      {
+        "episode": 15,
+        "title": "I’ve Killed People And I Have Hostages",
+        "line": "Matt Lieber is a comforter, accidentally warmed by the radiator.",
+        "url": "https://gimletmedia.com/episode/ive-killed-people-and-i-have-hostages/",
+      },
+      {
+        "episode": 16,
+        "title": "Why Is Mason Reese Crying",
+        "line": "Matt Lieber is the smell of my grandmother’s kitchen, of crayons, of comic books.",
+        "url": "https://gimletmedia.com/episode/16-why-is-mason-reese-crying/",
+      },
+      {
+        "episode": 17,
+        "title": "The Time Traveler And The Hitman",
+        "line": "Matt Lieber is the band you discovered in high school long before everybody else did.",
+        "url": "https://gimletmedia.com/episode/17-the-time-traveler-and-the-hitman/",
+      },
+      {
+        "episode": 18,
+        "title": "Silence And Respect",
+        "line": "Matt Lieber is a catharsis that you only reach after years of therapy.",
+        "url": "https://gimletmedia.com/episode/18-silence-and-respect/",
+      },
+      {
+        "episode": 24,
+        "title": "Exit Return Part Ii",
+        "line": "Matt Lieber is something you think is impossible, but you have to try anyway.",
+        "url": "https://gimletmedia.com/episode/24-exit-return-part-ii/"
+      },
+      {
+        "episode": 25,
+        "title": "Favor Atender",
+        "line": "Matt Lieber is the confidence to fight through the self doubt that keeps you from being your best self.",
+        "url": "https://gimletmedia.com/episode/25-favor-atender/"
+      },
+      {
+        "episode": 26,
+        "title": "Craigslist Horsleys List",
+        "line": "Matt Lieber is a T shirt you don’t watch because you’re afraid it will shrink.",
+        "url": "https://gimletmedia.com/episode/26-craigslist-horsleys-list/"
+      },
+      {
+        "episode": 27,
+        "title": "The Fever",
+        "line": "Matt Lieber is the free garlic knots with your pizza.",
+        "url": "https://gimletmedia.com/episode/27-the-fever/"
+      },
+      {
+        "episode": 28,
+        "title": "Shipped To Timbuktu",
+        "line": "Matt Lieber is your friend’s swimming pool.",
+        "url": "https://gimletmedia.com/episode/28-shipped-to-timbuktu/"
+      },
+      {
+        "episode": 29,
+        "title": "The Takeover",
+        "line": "Matt Lieber is that rock quarry you’ve been swimming at for years and still no one else seems to know about it.",
+        "url": "https://gimletmedia.com/episode/29-the-takeover-rebroadcast/"
+      },
+      {
+        "episode": 30,
+        "title": "The Man In The Fbi Hat",
+        "line": "Matt Lieber is that moment when you realize the person you’ve been crushing on all semester might just like you back.",
+        "url": "https://gimletmedia.com/episode/30-the-man-in-the-fbi-hat/"
+      },
+      // {
+      //   "episode": 31,
+      //   "title": "BONUS: The Reddit Implosion Explainer",
+      //   "line": "", // TODO
+      //   "url": "https://gimletmedia.com/episode/31-bonus-the-reddit-implosion-explainer/",
+      // },
+      {
+        "episode": 32,
+        "title": "The Evilest Technology On Earth",
+        "line": "Matt Lieber is a new haircut that’s not all messed up and weird. Are show was mixed by Rick Kwan.",
+        "url": "https://gimletmedia.com/episode/32-the-evilest-technology-on-earth/"
+      },
+      {
+        "episode": 33,
+        "title": "Isis",
+        "line": "Matt Lieber is an old movie that still holds up.",
+        "url": "https://gimletmedia.com/episode/33-isis/"
+      },
+      {
+        "episode": 34,
+        "title": "Dmv Nation",
+        "line": "Matt Lieber is Estonia.",
+        "url": "https://gimletmedia.com/episode/34-dmv-nation/"
+      },
+      {
+        "episode": 35,
+        "title": "One Strike",
+        "line": "Matt Lieber is that moment when the band you love comes out for an encore.",
+        "url": "https://gimletmedia.com/episode/35-one-strike/"
+      },
+      {
+        "episode": 36,
+        "title": "Todays The Day",
+        "line": "Matt Lieber is a job that you love so much that you actually sort of forget to go outside. And then one day, you sort of find yourself wondering, “Has the 4th of July happened yet?” And so you look out a window, and you realize actually, it’s the end of August. Summer’s almost over. And you just feel this tiny little teaspoon of regret. And then you realize, you could just go outside. The building has an elevator. What if you took it.",
+        "url": "https://gimletmedia.com/episode/36-todays-the-day/"
+      },
+      {
+        "episode": 37,
+        "title": "Taking Power",
+        "line": "Matt Lieber is a jump off a high dive.",
+        "url": "https://gimletmedia.com/episode/37-taking-power/"
+      },
+      {
+        "episode": 38,
+        "title": "Undo Undo Undo",
+        "line": "Matt Lieber is a night to yourself just long enough so you remember you like other people.",
+        "url": "https://gimletmedia.com/episode/38-undo-undo-undo/"
+      },
+      {
+        "episode": 39,
+        "title": "Reply All Exploder",
+        "line": "Matt Lieber is a book you stay up and read in one night.",
+        "url": "https://gimletmedia.com/episode/39-reply-all-exploder/"
+      },
+      {
+        "episode": 40,
+        "title": "The Flower Child",
+        "line": "Matt Lieber is that cousin you only see during the summer, but you get along as though you hang out all the time.",
+        "url": "https://gimletmedia.com/episode/40-the-flower-child/"
+      },
+      {
+        "episode": 41,
+        "title": "What It Looks Like",
+        "line": "Matt Lieber is good advice from an old friend.",
+        "url": "https://gimletmedia.com/episode/41-what-it-looks-like/"
+      },
+      {
+        "episode": 42,
+        "title": "Blindspot",
+        "line": "Matt Lieber is waking up in a tent so far from civilization that you can’t even hear the distant hush of tires.",
+        "url": "https://gimletmedia.com/episode/42-blindspot/"
+      },
+      {
+        "episode": 43,
+        "title": "The Law That Sticks",
+        "line": "Matt Lieber is a surprise party you secretly hoped for, but you never let yourself expect.",
+        "url": "https://gimletmedia.com/episode/43-the-law-that-sticks/"
+      },
+      {
+        "episode": 44,
+        "title": "Shine On You Crazy Goldman",
+        "line": "Matt Lieber is a piper at the gates of dawn.",
+        "url": "https://gimletmedia.com/episode/44-shine-on-you-crazy-goldman/"
+      },
+      {
+        "episode": 45,
+        "title": "The Rainbow Pug",
+        "line": "Matt Lieber is a rope swing over a pond.",
+        "url": "https://gimletmedia.com/episode/45-the-rainbow-pug/"
+      },
+      {
+        "episode": 46,
+        "title": "Yik Yak Returns",
+        "line": "Matt Lieber is a conversation so engrossing, the only thing that snaps you out of it is the sun coming up.",
+        "url": "https://gimletmedia.com/episode/46-yik-yak-returns/"
+      },
+      {
+        "episode": 47,
+        "title": "Quit Already",
+        "line": "Matt Lieber is a spontaneous road trip.",
+        "url": "https://gimletmedia.com/episode/47-quit-already-2/"
+      },
+      {
+        "episode": 48,
+        "title": "I Love You I Loathe You",
+        "line": "Matt Lieber is finally finding the name of that movie you saw as a kid that was so weird and vivid that you didn’t know if you’d dreamt it or not.",
+        "url": "https://gimletmedia.com/episode/48-i-love-you-i-loathe-you/"
+      },
+      {
+        "episode": 49,
+        "title": "Past Present Future",
+        "line": "Matt Lieber is when you run into a friend on the street and you end up just spending the day walking around.",
+        "url": "https://gimletmedia.com/episode/49-past-present-future/"
+      },
+      {
+        "episode": 50,
+        "title": "The Cathedral",
+        "line": "Matt Lieber is the quiet stillness of the year’s first snowfall.",
+        "url": "https://gimletmedia.com/episode/50-the-cathedral/"
+      },
+      {
+        "episode": 51,
+        "title": "Perfect Crime",
+        "line": "Matt Lieber is the phone that you drop out of your hand onto the sidewalk, pick up in sheer horror, look at, and realize that it is somehow completely unharmed.",
+        "url": "https://gimletmedia.com/episode/51-perfect-crime/"
+      },
+      {
+        "episode": 52,
+        "title": "Raising The Bar",
+        "line": "Matt Lieber is one of those nights that is so fun and gets so out of hand that when you describe to your friends you can tell that they don’t totally believe you.",
+        "url": "https://gimletmedia.com/episode/52-raising-the-bar/"
+      },
+      {
+        "episode": 53,
+        "title": "In The Desert",
+        "line": "Matt Lieber is person that can fix the things that are broken and complicated.",
+        "url": "https://gimletmedia.com/episode/53-in-the-desert/"
+      },
+      // {
+      //   "episode": 54,
+      //   "title": "Apologies to Dr. Rosalind Franklin",
+      //   "line": "", // TODO
+      //   "url": "https://gimletmedia.com/episode/54-apologies-to-dr-rosalind-franklin/",
+      // },
+      {
+        "episode": 55,
+        "title": "No Doubt",
+        "line": "Matt Lieber is a word you finally remember.",
+        "url": "https://gimletmedia.com/episode/55-no-doubt/"
+      },
+      {
+        "episode": 56,
+        "title": "Zardulu",
+        "line": "Matt Lieber is Zardulu. He could be.",
+        "url": "https://gimletmedia.com/episode/zardulu/",
+      },
+      {
+        "episode": 57,
+        "title": "Milk Wanted",
+        "line": "Matt Lieber is the first day of the year where everyone walks around carrying the coats that they just realized they don’t need to wear.",
+        "url": "https://gimletmedia.com/episode/57-milk-wanted/"
+      },
+      {
+        "episode": 58,
+        "title": "Earth Pony",
+        "line": "Matt Lieber is a killer drum break.",
+        "url": "https://gimletmedia.com/episode/58-earth-pony/"
+      },
+      {
+        "episode": 59,
+        "title": "Good Job Alex",
+        "line": "Matt Lieber is one more hour of sleep.",
+        "url": "https://gimletmedia.com/episode/59-good-job-alex/"
+      },
+      {
+        "episode": 60,
+        "title": "A Simple Question",
+        "line": "Matt Lieber is light itself coursing throughout the city spreading information.",
+        "url": "https://gimletmedia.com/episode/60-a-simple-question/"
+      },
+      {
+        "episode": 61,
+        "title": "Baby King",
+        "line": "Matt Lieber is an animated gif of a mailman furiously beating a mailbox with a baseball bat.",
+        "url": "https://gimletmedia.com/episode/61-baby-king/"
+      },
+      {
+        "episode": 62,
+        "title": "Decoders",
+        "line": "Matt Lieber is the chairman of Wayne Enterprises.",
+        "url": "https://gimletmedia.com/episode/62-decoders/"
+      },
+      {
+        "episode": 63,
+        "title": "1000 Brimes",
+        "line": "Matt Lieber is a weekend with good weather and no plans.",
+        "url": "https://gimletmedia.com/episode/63-1000-brimes/"
+      },
+      {
+        "episode": 64,
+        "title": "On The Inside",
+        "line": "Matt Lieber is the salsa dancer emoji.",
+        "url": "https://gimletmedia.com/episode/64-on-the-inside/"
+      },
+      {
+        "episode": 65,
+        "title": "On The Inside Part Ii",
+        "line": "Matt Lieber is a mousepad with a kitten in a basket on it.",
+        "url": "https://gimletmedia.com/episode/65-on-the-inside-part-ii/"
+      },
+      {
+        "episode": 66,
+        "title": "On The Inside Part Iii",
+        "line": "Matt Lieber is the first day of the year that you can fall asleep with the window open.",
+        "url": "https://gimletmedia.com/episode/66-on-the-inside-part-iii/"
+      },
+      {
+        "episode": 67,
+        "title": "On The Inside Part Iv",
+        "line": "Matt Lieber is a new puppy that finally sleeps through the night.",
+        "url": "https://gimletmedia.com/episode/67-on-the-inside-part-iv/"
+      },
+      {
+        "episode": 68,
+        "title": "Vampire Rules",
+        "line": "Matt Lieber is a nap in a park.",
+        "url": "https://gimletmedia.com/episode/68-vampire-rules/"
+      },
+      {
+        "episode": 69,
+        "title": "Disappeared",
+        "line": "Matt Lieber is the smoke from fireworks.",
+        "url": "https://gimletmedia.com/episode/69-disappeared/"
+      },
+      {
+        "episode": 70,
+        "title": "Stolen Valor",
+        "line": "Matt Lieber is a summer night where you somehow get the ratio of thin sheet to heavy sheet and air conditioner to window to finally line up and you are not too hot and you are not too cold and you actually sleep.",
+        "url": "https://gimletmedia.com/episode/70-stolen-valor/"
+      },
+      {
+        "episode": 71,
+        "title": "The Picture Taker",
+        "line": "Matt Lieber is tubing down a lazy river, towing a six pack.",
+        "url": "https://gimletmedia.com/episode/71-the-picture-taker/"
+      },
+      {
+        "episode": 72,
+        "title": "Dead Is Paul",
+        "line": "Matt Lieber is a plate of very fancy cold cuts.",
+        "url": "https://gimletmedia.com/episode/72-dead-is-paul/"
+      },
+      {
+        "episode": 73,
+        "title": "Sandbox",
+        "line": "Matt Lieber is a long lunch.",
+        "url": "https://gimletmedia.com/episode/73-sandbox/"
+      },
+      {
+        "episode": 74,
+        "title": "Making Friends",
+        "line": "Matt Lieber is cicada season.",
+        "url": "https://gimletmedia.com/episode/74-making-friends/"
+      },
+      {
+        "episode": 75,
+        "title": "Boy Wonder",
+        "line": "Matt Lieber is a three day weekend you completely forgot about.",
+        "url": "https://gimletmedia.com/episode/75-boy-wonder/"
+      },
+      {
+        "episode": 76,
+        "title": "Lost In A Cab",
+        "line": "Matt Lieber is the sound of your favorite person laughing.",
+        "url": "https://gimletmedia.com/episode/76-lost-in-a-cab/"
+      },
+      {
+        "episode": 77,
+        "title": "The Grand Tapestry Of Pepe",
+        "line": "Matt Lieber is a dingy hotel in a small town that somehow has your favorite pinball game.",
+        "url": "https://gimletmedia.com/episode/77-the-grand-tapestry-of-pepe/"
+      },
+      {
+        "episode": 78,
+        "title": "Very Quickly To The Drill",
+        "line": "Matt Lieber is the director’s cut of Aliens. Not the theatrical release.",
+        "url": "https://gimletmedia.com/episode/78-very-quickly-to-the-drill/"
+      },
+      {
+        "episode": 79,
+        "title": "Boy In Photo",
+        "line": "Matt Lieber is a perfect Halloween costume.",
+        "url": "https://gimletmedia.com/episode/79-boy-in-photo/"
+      },
+      {
+        "episode": 80,
+        "title": "Flash",
+        "line": "Matt Lieber is money you find in a winter coat.",
+        "url": "https://gimletmedia.com/episode/80-flash/"
+      },
+      {
+        "episode": 81,
+        "title": "In The Tall Grass",
+        "line": "Matt Lieber is a new season of a long cancelled television show that’s actually as good as it was when it was originally on the air.",
+        "url": "https://gimletmedia.com/episode/81-in-the-tall-grass/"
+      },
+      {
+        "episode": 82,
+        "title": "Hello",
+        "line": "Matt Lieber is a late night phone call from a friend.",
+        "url": "https://gimletmedia.com/episode/82-hello/"
+      },
+      {
+        "episode": 83,
+        "title": "Voyage Into Pizzagate",
+        "line": "Matt Lieber is a space heater on cold feet.",
+        "url": "https://gimletmedia.com/episode/83-voyage-into-pizzagate/"
+      },
+      {
+        "episode": 84,
+        "title": "Past Present Future 2",
+        "line": "Matt Lieber is launching your sled off a killer jump.",
+        "url": "https://gimletmedia.com/episode/84-past-present-future-2/"
+      }
+    ]
+  </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
+
+  <style type="text/css">
+    h1 {
+      font-family: 'Coustard', cursive;
+      line-height: 125%;
+    }
+    @media (min-width:1200px) {
+      h1 {
+        font-size: 70px;
+      }
+    }
+    .jumbotron {
+      background-color: #f4c20d;
+    }
+    .jumbotron p {
+      font-size: 110%;
+    }
+    code {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" style="margin-top: 40px">
+  <div class="row"> 
+    <div class="col-lg-12">
+      
+      <div class="jumbotron">
+        <h1 id="credit-line">
+          Loading…
+        </h1>
+        <p>
+          <span id="source-default-text">
+            This beautiful credit line is from
+          </span>
+          <span id="source-text-with-custom-by-name">
+            This beatiful credit line is send to you by <span id="by-name">#by-name</span>.
+            <br>
+            It is inspired by
+          </span>
+          the wonderful Podcast Reply All, 
+          Episode “<a id="episode-title" href="#url" target="_blank">#title</a>”.
+        </p>
+        <p>
+          <a href="#random_episode" class="btn btn-default" onclick="location.reload();">Try another line…</a>
+        </p>
+      </div>
+
+      <footer class="text-muted">
+        You can change the name in the URL and send it to your friend. 
+        You can also add your name to make it more personal. 
+        <br>
+        <a href="?to=Matt Lieber&by=Alex Goldman#random_episode">Example</a>: 
+        <code>?<strong>to</strong>=Matt Lieber&<strong>by</strong>=Alex Goldman#random_episode</code>.
+        <br>
+        <br>
+        If you like this page, <a href="https://www.betterplace.org/en/projects/12586?utm_source=website&utm_campaign=tordans.github.io%2Fgive-credit&utm_medium=footer-link" target="_blank">donate a Euro at betterplace.org to aid the people of Syria</a>.
+        <br>
+        Also, everyone can <a href="https://github.com/tordans/give-credit">add new credit lines</a>.
+        <a href="https://github.com/tordans/give-credit">Imprint</a>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Concept:
+  // Domain "give-credit.githubpages.com?to=Firstname Lastname"
+
+  // Quelle https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/math.random
+  // Gibt eine Zufallszahl zwischen min (inklusive) und max (inklusive) zurück 
+  // Die Verwendung von Math.round() erzeugt keine gleichmäßige Verteilung! 
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min +1)) + min; 
+  }
+
+  // Quelle http://stackoverflow.com/a/21903119
+  function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+      sURLVariables = sPageURL.split('&'),
+      sParameterName,
+      i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+    }
+  }
+
+  // Init
+  var credit = getCredit();
+
+  // Redirect to default URL
+  var to_param = getUrlParameter('to');
+  if(to_param === undefined || to_param == "" || to_param == true) {
+    history.pushState({}, '', "?to=Matt%20Lieber");
+  }
+
+  // Always add the current credit id as hash
+  var hash = window.location.hash.substring(1);
+  if(hash.indexOf('episode_') == -1) {
+    window.location.hash = "episode_" + credit.episode
+  }
+
+  // Get credit entry – loaded from hash or a random
+  function getCredit() {
+    var hash = window.location.hash.substring(1);
+    var credit;
+    if(hash.indexOf('episode_') != -1) {
+      var episode_id = hash.match(/^episode_(\d+)/)[1];
+      data.forEach(function(item, i) {
+        if(item.episode == episode_id) {
+          credit = item;
+        }
+      });
+    } else {
+      credit = randomCredit();
+    }
+    return credit || randomCredit();
+  }
+
+  // Get random credit entry
+  function randomCredit() {
+    var random_position = getRandomInt(1, data.length) - 1;
+    return data[random_position];    
+  }
+
+  // Line for random entry with custom name if given
+  function getLine(credit) {
+    var name = getUrlParameter('to') || "Matt Lieber";
+    line = credit.line.replace("Matt Lieber", name);
+    return line;
+  }
+
+  // Render content
+  document.getElementById("credit-line").textContent = getLine(credit);
+  document.getElementById("episode-title").textContent = credit.title;
+  document.getElementById("episode-title").href = credit.url;
+  var by_param = getUrlParameter('by');
+  if(by_param) {
+    document.getElementById("source-default-text").textContent = ''; // hide default text
+    document.getElementById("by-name").textContent = by_param;
+  } else {
+    document.getElementById("source-text-with-custom-by-name").textContent = ''; // hide custom text
+  }
+</script>
+</body>
+</html>
