@@ -12,3 +12,7 @@ All lines/episodes are stored in a JSON array inside the index.html-file
 4. Go to "View full transcript"
 5. Search the website for "Matt Lieber" and find the line in the credits
 6. Edit the index.html and add the line, epsiode number, title, URL to the JSON the same way they all are
+
+# Imprint
+
+[Tobias' Contact Information](http://tobiasjordans.de/)
