@@ -652,6 +652,8 @@
   } else {
     document.getElementById("source-text-with-custom-by-name").textContent = ''; // hide custom text
   }
+  // Fill up the dropdown with all episodes
+  // Since we needed jquery and bootstrap js for the dropdown, we might as well continue using jquery …
   $.each( data.reverse(), function(index, episode) {
     var current = '';
     if(currentEpisodeIdFromHash() == episode.episode) {
@@ -679,7 +681,13 @@
   ga('create', 'UA-90749155-1', 'auto');
   ga('set', 'anonymizeIp', true);
   ga('require', 'linkid');
-  ga('send', 'pageview');
+  // Custom page path that transforms the hash in something analytics tracks
+  // and also normalizes the order of params.
+  var custom_page_path = location.pathname;
+  custom_page_path += '?episode='+window.location.hash.substring(1) + 
+    '&by=' + getUrlParameter('by') + 
+    '&to=' + getUrlParameter('to')
+  ga('send', 'pageview', custom_page_path);
 </script>
 </body>
 </html>
