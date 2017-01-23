@@ -643,6 +643,7 @@
 
   // Render content
   document.getElementById("credit-line").textContent = getLine(credit);
+  document.title += ' –– ' + getLine(credit);
   document.getElementById("episode-title").textContent = credit.title;
   document.getElementById("episode-title").href = credit.url;
   var by_param = getUrlParameter('by');
