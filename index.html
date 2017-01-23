@@ -538,7 +538,9 @@
         If you like this page, <a href="https://www.betterplace.org/en/projects/12586?utm_source=website&utm_campaign=tordans.github.io%2Fgive-credit&utm_medium=footer-link" target="_blank">donate a Euro at betterplace.org to aid the people of Syria</a>.
         <br>
         Also, everyone can <a href="https://github.com/tordans/give-credit">add new credit lines</a>.
-        <a href="https://github.com/tordans/give-credit">Imprint</a>
+        <br>
+        <a href="https://github.com/tordans/give-credit">Imprint</a>. 
+        This site uses Google Analytics (<a href="#" onclick="gaOptout();">you can opt out</a>).
       </footer>
     </div>
   </div>
@@ -637,6 +639,26 @@
   } else {
     document.getElementById("source-text-with-custom-by-name").textContent = ''; // hide custom text
   }
+
+<script>
+  var disableStr = 'ga-disable-UA-90749155-1';
+  if (document.cookie.indexOf(disableStr + '=true') > -1) {
+    window[disableStr] = true;
+  }
+  function gaOptout() {
+    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    window[disableStr] = true;
+  }
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90749155-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('require', 'linkid');
+  ga('send', 'pageview');
 </script>
 </body>
 </html>
