@@ -588,14 +588,22 @@
     window.location.hash = "episode_" + credit.episode
   }
 
+  // Return the id of an episode from the hash or nothing
+  function currentEpisodeIdFromHash() {
+    var hash = window.location.hash.substring(1);
+    if(hash.indexOf('episode_') != -1) {
+      return episode_id = hash.match(/^episode_(\d+)/)[1];
+    } else {
+      return;
+    }
+  }
+
   // Get credit entry – loaded from hash or a random
   function getCredit() {
-    var hash = window.location.hash.substring(1);
     var credit;
-    if(hash.indexOf('episode_') != -1) {
-      var episode_id = hash.match(/^episode_(\d+)/)[1];
+    if(currentEpisodeIdFromHash()) {
       data.forEach(function(item, i) {
-        if(item.episode == episode_id) {
+        if(item.episode == currentEpisodeIdFromHash()) {
           credit = item;
         }
       });
